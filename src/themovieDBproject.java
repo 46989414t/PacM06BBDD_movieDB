@@ -29,15 +29,15 @@ public class themovieDBproject {
             result.append(line);
         }
         rd.close();
-        return result.toString();
+        return result.toString();//retorna un JSON
     }
 
     public static void main(String[] args){
         String s = "";
         String api_key = "18cae3b3818a484b1bf732d10321342b";
 
-        for (int i = 0; i < 40; i++) {
-            int peli = 901 +i;
+        for (int i = 0; i < 10; i++) {
+            int peli = 908 +i;
             String film = String.valueOf(peli);
             String peticio = "https://api.themoviedb.org/3/movie/"+film+"?api_key="+api_key;
             try {
